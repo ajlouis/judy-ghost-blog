@@ -9,9 +9,12 @@
             {{#if @site.navigation}}
                 {{navigation}}
             {{/if}}
+
             {{#is "post"}}
                 <span class="nav-post-title {{#unless @site.logo}}dash{{/unless}}">{{post.title}}</span>
             {{/is}}
+
+
         </div>
     </div>
     <div class="site-nav-right">
@@ -22,11 +25,13 @@
             {{#if @site.twitter}}
                 <a class="social-link social-link-tw" href="https://twitter.com/masantewaa1" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
             {{/if}}
+
         </div>
         {{#if @labs.members}}
             <a class="subscribe-button" href="#subscribe">Subscribe</a>
         {{else}}
             <a class="rss-button" href="https://www.instagram.com/masantewaabiz" title="Instagram" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
         {{/if}}
+
     </div>
 </nav>
