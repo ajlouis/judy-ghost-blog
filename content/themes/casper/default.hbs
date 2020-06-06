@@ -44,10 +44,10 @@
     {{{body}}}
 
     {{!-- The footer at the very bottom of the screen --}}
-    <div style="padding: 16px;background-color: #9c27b0;text-align: center">
+    <div style="padding: 16px;background-color: #2a9800;text-align: center">
         <a href="https://www.masantewaagh.com">
             <strong style="max-width: fit-content;margin: auto;color: white;text-decoration: underline">
-                Shop at Masantewaa
+            Take me to Masantewaa
             </strong>
         </a>
     </div>
@@ -57,7 +57,13 @@
             </section>
             <nav class="site-footer-nav">
                 <a href="{{@site.url}}">Latest Posts</a>
-                {{#if @site.facebook}}
+                {{#if @site.facebook}}    <div style="padding: 16px;background-color: #9c27b0;text-align: center">
+        <a href="https://www.masantewaagh.com">
+            <strong style="max-width: fit-content;margin: auto;color: white;text-decoration: underline">
+                Shop at Masantewaa
+            </strong>
+        </a>
+    </div>
                     <a href="https://web.facebook.com/pg/Masantewaa-111497826951627" target="_blank" rel="noopener">Facebook</a>{{/if}}
                 {{#if @site.twitter}}
                     <a href="https://twitter.com/masantewaa1" target="_blank" rel="noopener">Twitter</a>{{/if}}

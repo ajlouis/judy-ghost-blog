@@ -26,7 +26,6 @@ production stylesheet in assets/built/screen.css
 
 */
 
-
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
 @import "global.css";
@@ -127,7 +126,7 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
+    background: rgba(0, 0, 0, 0.18);
 }
 
 .site-header-background:after {
@@ -140,7 +139,7 @@ body {
     z-index: 10;
     display: block;
     height: 140px;
-    background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
 }
 
 .site-header-background.no-image:before,
@@ -316,7 +315,7 @@ body {
     .site-header-background:not(.responsive-header-img) .site-nav:after,
     .site-nav-main .site-nav:after {
         right: 0;
-        background: linear-gradient(to right, color(var(--darkgrey) l(-5%) a(0)) 0%,color(var(--darkgrey) l(-5%)) 100%);
+        background: linear-gradient(to right, color(var(--darkgrey) l(-5%) a(0)) 0%, color(var(--darkgrey) l(-5%)) 100%);
     }
 
     .nav li:last-of-type {
@@ -514,7 +513,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     opacity: 1;
 }
 
-.rss-button {
+.-button {
     opacity: 0.8;
 }
 
@@ -527,6 +526,17 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 2.1rem;
     fill: #fff;
 }
+
+.instagram-button:hover {
+    opacity: 1;
+}
+
+.instagram-button svg {
+    margin-bottom: 1px;
+    height: 2.1rem;
+    fill: #fff;
+}
+
 
 /* Special behaviors for home navigation */
 
@@ -725,7 +735,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     white-space: nowrap;
     background: var(--darkgrey);
     border-radius: 3px;
-    box-shadow: rgba(39,44,49,0.08) 0 12px 26px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    box-shadow: rgba(39, 44, 49, 0.08) 0 12px 26px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
     opacity: 0;
     transition: all 0.35s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transform: translateY(6px);
@@ -996,12 +1006,14 @@ make sure this only happens on large viewports / desktop-ish devices.
         padding: 0 11vw;
     }
 }
+
 @media (max-width: 800px) {
     .post-full-content {
         padding: 0 5vw;
         font-size: 1.8rem;
     }
 }
+
 @media (max-width: 500px) {
     .post-full-custom-excerpt {
         font-size: 1.9rem;
@@ -1035,6 +1047,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 0 0 1.5em 0;
     min-width: 100%;
 }
+
 @media (max-width: 500px) {
     .post-full-content p,
     .post-full-content ul,
@@ -1089,6 +1102,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     max-width: 1040px;
     height: auto;
 }
+
 @media (max-width: 1040px) {
     .post-full-content img,
     .post-full-content video {
@@ -1137,6 +1151,7 @@ Usage (In Ghost editor):
     padding: 0 1.5em;
     border-left: #3eb0ef 3px solid;
 }
+
 @media (max-width: 500px) {
     .post-full-content blockquote {
         padding: 0 1.3em;
@@ -1159,7 +1174,7 @@ Usage (In Ghost editor):
     padding: 0 5px 2px;
     font-size: 0.8em;
     line-height: 1em;
-    font-weight: 400!important;
+    font-weight: 400 !important;
     background: var(--whitegrey);
     border-radius: 3px;
 }
@@ -1238,9 +1253,11 @@ Usage (In Ghost editor):
     line-height: 1.25em;
     font-weight: 600;
 }
+
 .post-full-content p + h1 {
     margin-top: 0.8em;
 }
+
 @media (max-width: 800px) {
     .post-full-content h1 {
         font-size: 3.2rem;
@@ -1254,9 +1271,11 @@ Usage (In Ghost editor):
     line-height: 1.25em;
     font-weight: 600;
 }
+
 .post-full-content p + h2 {
     margin-top: 0.8em;
 }
+
 @media (max-width: 800px) {
     .post-full-content h2 {
         margin-bottom: 0.3em;
@@ -1271,9 +1290,11 @@ Usage (In Ghost editor):
     line-height: 1.3em;
     font-weight: 600;
 }
+
 .post-full-content h2 + h3 {
     margin-top: 0.7em;
 }
+
 @media (max-width: 800px) {
     .post-full-content h3 {
         margin-bottom: 0.3em;
@@ -1287,12 +1308,15 @@ Usage (In Ghost editor):
     font-size: 2.5rem;
     font-weight: 600;
 }
+
 .post-full-content h2 + h4 {
     margin-top: 0.7em;
 }
+
 .post-full-content h3 + h4 {
     margin-top: 0;
 }
+
 @media (max-width: 800px) {
     .post-full-content h4 {
         margin-bottom: 0.3em;
@@ -1307,17 +1331,19 @@ Usage (In Ghost editor):
     padding: 0.4em 1em 0.9em;
     border: 0;
     color: var(--blue);
-    font-family: Georgia,serif;
+    font-family: Georgia, serif;
     font-size: 3.2rem;
     line-height: 1.35em;
     text-align: center;
 }
+
 @media (min-width: 1180px) {
     .post-full-content h5 {
         max-width: 1060px;
         width: 100vw;
     }
 }
+
 @media (max-width: 800px) {
     .post-full-content h5 {
         margin-bottom: 1em;
@@ -1333,6 +1359,7 @@ Usage (In Ghost editor):
     font-size: 2.0rem;
     font-weight: 700;
 }
+
 @media (max-width: 800px) {
     .post-full-content h6 {
         font-size: 1.8rem;
@@ -1428,13 +1455,13 @@ Usage (In Ghost editor):
 }
 
 .post-full-content table td:first-child {
-    background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
     background-size: 20px 100%;
     background-repeat: no-repeat;
 }
 
 .post-full-content table td:last-child {
-    background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
     background-position: 100% 0;
     background-size: 20px 100%;
     background-repeat: no-repeat;
@@ -1533,7 +1560,7 @@ Usage (In Ghost editor):
     line-height: 1.5em;
     background: white;
     border-radius: 3px;
-    box-shadow: rgba(39,44,49,0.08) 0 12px 26px, rgba(39, 44, 49, 0.06) 1px 3px 8px;
+    box-shadow: rgba(39, 44, 49, 0.08) 0 12px 26px, rgba(39, 44, 49, 0.06) 1px 3px 8px;
     opacity: 0;
     transition: all 0.35s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transform: scale(0.98) translateY(15px);
@@ -1720,10 +1747,10 @@ Usage (In Ghost editor):
     font-weight: 400;
     text-align: center;
     background: linear-gradient(
-    color(var(--blue) whiteness(+7%)),
-    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color(var(--blue) lightness(-4%) saturation(-10%))
+        color(var(--blue) whiteness(+7%)),
+        color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
+        color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
+        color(var(--blue) lightness(-4%) saturation(-10%))
     );
     border-radius: 5px;
 
@@ -2333,7 +2360,7 @@ Usage (In Ghost editor):
     margin: 5px 0 0;
     width: 110px;
     height: 110px;
-    box-shadow: rgba(255,255,255,0.1) 0 0 0 6px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 0 0 6px;
 }
 
 .author-header-content .author-bio {
@@ -2502,12 +2529,15 @@ Usage (In Ghost editor):
     .error-content {
         padding-top: 24vw;
     }
+
     .error-code {
         font-size: 11.2rem;
     }
+
     .error-message {
         padding-bottom: 16vw;
     }
+
     .error-description {
         margin: 5px 0 0 0;
         font-size: 1.8rem;
@@ -2518,6 +2548,7 @@ Usage (In Ghost editor):
     .error-content {
         padding-top: 28vw;
     }
+
     .error-message {
         padding-bottom: 14vw;
     }
@@ -2601,7 +2632,7 @@ Usage (In Ghost editor):
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(9,10,11,0.97);
+    background: rgba(9, 10, 11, 0.97);
     opacity: 0;
     transition: opacity 0.2s ease-in;
     pointer-events: none;
@@ -2704,10 +2735,10 @@ Usage (In Ghost editor):
     font-weight: 400;
     text-align: center;
     background: linear-gradient(
-    color(var(--blue) whiteness(+7%)),
-    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color(var(--blue) lightness(-4%) saturation(-10%))
+        color(var(--blue) whiteness(+7%)),
+        color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
+        color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
+        color(var(--blue) lightness(-4%) saturation(-10%))
     );
     border-radius: 8px;
 
@@ -2740,16 +2771,16 @@ Usage (In Ghost editor):
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 1.3rem;
 }
 
 .site-footer-content a {
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .site-footer-content a:hover {
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
@@ -2802,7 +2833,7 @@ Usage (In Ghost editor):
     }
 
     .site-header-background:before {
-        background: rgba(0,0,0,0.6);
+        background: rgba(0, 0, 0, 0.6);
     }
 
     .post-feed {
@@ -2879,7 +2910,7 @@ Usage (In Ghost editor):
 
     .author-list-item .author-card {
         background: color(var(--darkmode) l(+4%));
-        box-shadow: 0 12px 26px rgba(0,0,0,0.4);
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.4);
     }
 
     .author-list-item .author-card:before {
@@ -2945,7 +2976,7 @@ Usage (In Ghost editor):
     .post-full-content .kg-bookmark-container,
     .post-full-content .kg-bookmark-container:hover {
         color: rgba(255, 255, 255, 0.75);
-        box-shadow: 0 0 1px rgba(255,255,255,0.9);
+        box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
     }
 
     .kg-bookmark-title {
@@ -2970,7 +3001,7 @@ Usage (In Ghost editor):
     }
 
     .site-header-content .author-profile-image {
-        box-shadow: 0 0 0 6px hsla(0,0%,100%,0.04);
+        box-shadow: 0 0 0 6px hsla(0, 0%, 100%, 0.04);
     }
 
     .subscribe-form {
